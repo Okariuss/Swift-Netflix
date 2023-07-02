@@ -50,13 +50,13 @@ final class HeroHeaderUIView: UIView {
     
     private func applyConstraints() {
         let playButtonConstraints = [
-            playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 90),
+            playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 70),
             playButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -25),
             playButton.widthAnchor.constraint(equalToConstant: 100)
         ]
         
         let downloadButtonConstraints = [
-            downloadButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -90),
+            downloadButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -70),
             downloadButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -25),
             downloadButton.widthAnchor.constraint(equalToConstant: 100)
         ]
