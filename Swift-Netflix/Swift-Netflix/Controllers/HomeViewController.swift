@@ -9,7 +9,7 @@ import UIKit
 
 final class HomeViewController: UIViewController {
     
-    let sectionTitles: [String] = ["TRENDING MOVIES", "POPULAR", "TRENDING TV", "UPCOMING MOVIES", "TOP RATED"]
+    let sectionTitles: [String] = ["TRENDING MOVIES", "TRENDING TV", "POPULAR", "UPCOMING MOVIES", "TOP RATED"]
     
     private let homeFeedTable: UITableView =  {
         let table = UITableView(frame: .zero, style: .grouped)
@@ -31,7 +31,7 @@ final class HomeViewController: UIViewController {
         let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height * 0.7))
         homeFeedTable.tableHeaderView = headerView
         
-        getTrendingMovies()
+        fetchData()
     }
     
     private func configureNavbar() {
@@ -51,7 +51,7 @@ final class HomeViewController: UIViewController {
         homeFeedTable.frame = view.bounds
     }
     
-    private func getTrendingMovies() {
+    private func fetchData() {
         APICaller.shared.getTrendingMovies { results in
             switch results {
             case .success(let movies):
@@ -59,6 +59,27 @@ final class HomeViewController: UIViewController {
             case.failure(let error):
                 print(error)
             }
+        }
+        
+        APICaller.shared.getTrendingTVs { results in
+            switch results {
+            case .success(let tvs):
+                print(tvs)
+            case.failure(let error):
+                print(error)
+            }
+        }
+        
+        APICaller.shared.getUpcoming { _ in
+            
+        }
+        
+        APICaller.shared.getPopular { _ in
+            
+        }
+        
+        APICaller.shared.topRated { _ in
+            
         }
     }
 }
@@ -99,6 +120,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         header.textLabel?.frame = CGRect(x: header.bounds.origin.x, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
         header.textLabel?.textColor = .label
+        header.textLabel?.text = header.textLabel?.text?.capitalizeFirstLetter()
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
