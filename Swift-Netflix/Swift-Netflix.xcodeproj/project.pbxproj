@@ -24,6 +24,9 @@
 		EB72C1C52A51BC2000A4BDD5 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1C42A51BC2000A4BDD5 /* APICaller.swift */; };
 		EB72C1C72A51BF2200A4BDD5 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1C62A51BF2200A4BDD5 /* Title.swift */; };
 		EB72C1C92A51C23000A4BDD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1C82A51C23000A4BDD5 /* Extensions.swift */; };
+		EB72C1CD2A51CF7300A4BDD5 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1CC2A51CF7300A4BDD5 /* TitleCollectionViewCell.swift */; };
+		EB72C1D02A51D05B00A4BDD5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = EB72C1CF2A51D05B00A4BDD5 /* SDWebImage */; };
+		EB72C1D22A51D05B00A4BDD5 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EB72C1D12A51D05B00A4BDD5 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,7 @@
 		EB72C1C42A51BC2000A4BDD5 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		EB72C1C62A51BF2200A4BDD5 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		EB72C1C82A51C23000A4BDD5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EB72C1CC2A51CF7300A4BDD5 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB72C1D22A51D05B00A4BDD5 /* SDWebImageMapKit in Frameworks */,
+				EB72C1D02A51D05B00A4BDD5 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +170,7 @@
 			children = (
 				EB72C1C02A517CA400A4BDD5 /* CollectionViewTableViewCell.swift */,
 				EB72C1C22A51837900A4BDD5 /* HeroHeaderUIView.swift */,
+				EB72C1CC2A51CF7300A4BDD5 /* TitleCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +222,10 @@
 			dependencies = (
 			);
 			name = "Swift-Netflix";
+			packageProductDependencies = (
+				EB72C1CF2A51D05B00A4BDD5 /* SDWebImage */,
+				EB72C1D12A51D05B00A4BDD5 /* SDWebImageMapKit */,
+			);
 			productName = "Swift-Netflix";
 			productReference = EB72C17F2A51739E00A4BDD5 /* Swift-Netflix.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +298,9 @@
 				Base,
 			);
 			mainGroup = EB72C1762A51739E00A4BDD5;
+			packageReferences = (
+				EB72C1CE2A51D05B00A4BDD5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = EB72C1802A51739E00A4BDD5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -330,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB72C1B82A5175FF00A4BDD5 /* SearchViewController.swift in Sources */,
+				EB72C1CD2A51CF7300A4BDD5 /* TitleCollectionViewCell.swift in Sources */,
 				EB72C1872A51739E00A4BDD5 /* MainTabBarViewControllerViewController.swift in Sources */,
 				EB72C1C12A517CA400A4BDD5 /* CollectionViewTableViewCell.swift in Sources */,
 				EB72C1C52A51BC2000A4BDD5 /* APICaller.swift in Sources */,
@@ -666,6 +681,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB72C1CE2A51D05B00A4BDD5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB72C1CF2A51D05B00A4BDD5 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB72C1CE2A51D05B00A4BDD5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		EB72C1D12A51D05B00A4BDD5 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB72C1CE2A51D05B00A4BDD5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB72C1772A51739E00A4BDD5 /* Project object */;
 }
