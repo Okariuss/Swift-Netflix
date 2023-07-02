@@ -15,6 +15,10 @@
 		EB72C19A2A51739E00A4BDD5 /* Swift_NetflixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1992A51739E00A4BDD5 /* Swift_NetflixTests.swift */; };
 		EB72C1A42A51739E00A4BDD5 /* Swift_NetflixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1A32A51739E00A4BDD5 /* Swift_NetflixUITests.swift */; };
 		EB72C1A62A51739E00A4BDD5 /* Swift_NetflixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1A52A51739E00A4BDD5 /* Swift_NetflixUITestsLaunchTests.swift */; };
+		EB72C1B42A5175D900A4BDD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1B32A5175D900A4BDD5 /* HomeViewController.swift */; };
+		EB72C1B62A5175ED00A4BDD5 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1B52A5175ED00A4BDD5 /* UpcomingViewController.swift */; };
+		EB72C1B82A5175FF00A4BDD5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1B72A5175FF00A4BDD5 /* SearchViewController.swift */; };
+		EB72C1BA2A51760F00A4BDD5 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1B92A51760F00A4BDD5 /* DownloadsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		EB72C19F2A51739E00A4BDD5 /* Swift-NetflixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-NetflixUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB72C1A32A51739E00A4BDD5 /* Swift_NetflixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_NetflixUITests.swift; sourceTree = "<group>"; };
 		EB72C1A52A51739E00A4BDD5 /* Swift_NetflixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_NetflixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB72C1B32A5175D900A4BDD5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EB72C1B52A5175ED00A4BDD5 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		EB72C1B72A5175FF00A4BDD5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EB72C1B92A51760F00A4BDD5 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		EB72C1812A51739E00A4BDD5 /* Swift-Netflix */ = {
 			isa = PBXGroup;
 			children = (
+				EB72C1B22A5175A900A4BDD5 /* Controllers */,
 				EB72C1822A51739E00A4BDD5 /* AppDelegate.swift */,
 				EB72C1842A51739E00A4BDD5 /* SceneDelegate.swift */,
 				EB72C1862A51739E00A4BDD5 /* MainTabBarViewControllerViewController.swift */,
@@ -122,6 +131,17 @@
 				EB72C1A52A51739E00A4BDD5 /* Swift_NetflixUITestsLaunchTests.swift */,
 			);
 			path = "Swift-NetflixUITests";
+			sourceTree = "<group>";
+		};
+		EB72C1B22A5175A900A4BDD5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB72C1B32A5175D900A4BDD5 /* HomeViewController.swift */,
+				EB72C1B52A5175ED00A4BDD5 /* UpcomingViewController.swift */,
+				EB72C1B72A5175FF00A4BDD5 /* SearchViewController.swift */,
+				EB72C1B92A51760F00A4BDD5 /* DownloadsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB72C1B82A5175FF00A4BDD5 /* SearchViewController.swift in Sources */,
 				EB72C1872A51739E00A4BDD5 /* MainTabBarViewControllerViewController.swift in Sources */,
+				EB72C1BA2A51760F00A4BDD5 /* DownloadsViewController.swift in Sources */,
 				EB72C1832A51739E00A4BDD5 /* AppDelegate.swift in Sources */,
 				EB72C1852A51739E00A4BDD5 /* SceneDelegate.swift in Sources */,
+				EB72C1B62A5175ED00A4BDD5 /* UpcomingViewController.swift in Sources */,
+				EB72C1B42A5175D900A4BDD5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
