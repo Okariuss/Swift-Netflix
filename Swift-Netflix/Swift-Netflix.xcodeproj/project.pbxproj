@@ -30,6 +30,7 @@
 		EB72C1D42A51EA4A00A4BDD5 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1D32A51EA4A00A4BDD5 /* TitleTableViewCell.swift */; };
 		EB72C1D62A51F48200A4BDD5 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1D52A51F48200A4BDD5 /* TitleViewModel.swift */; };
 		EB72C1D82A520DDE00A4BDD5 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1D72A520DDE00A4BDD5 /* SearchResultsViewController.swift */; };
+		EB72C1DC2A521A9C00A4BDD5 /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C1DB2A521A9C00A4BDD5 /* YoutubeSearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		EB72C1D32A51EA4A00A4BDD5 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		EB72C1D52A51F48200A4BDD5 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		EB72C1D72A520DDE00A4BDD5 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		EB72C1DB2A521A9C00A4BDD5 /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				EB72C1C62A51BF2200A4BDD5 /* Title.swift */,
+				EB72C1DB2A521A9C00A4BDD5 /* YoutubeSearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				EB72C1832A51739E00A4BDD5 /* AppDelegate.swift in Sources */,
 				EB72C1D82A520DDE00A4BDD5 /* SearchResultsViewController.swift in Sources */,
 				EB72C1C92A51C23000A4BDD5 /* Extensions.swift in Sources */,
+				EB72C1DC2A521A9C00A4BDD5 /* YoutubeSearchResponse.swift in Sources */,
 				EB72C1852A51739E00A4BDD5 /* SceneDelegate.swift in Sources */,
 				EB72C1B62A5175ED00A4BDD5 /* UpcomingViewController.swift in Sources */,
 				EB72C1C72A51BF2200A4BDD5 /* Title.swift in Sources */,
