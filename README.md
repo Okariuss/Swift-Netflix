@@ -38,14 +38,6 @@ A Netflix-Clone app built using MVVM pattern, UIKit, and CoreData. This project 
 ```
 4. Build and run the project in the Xcode simulator or on a physical device.
 
-## Contributing
-
-If you want to contribute to this project and make it better, feel free to fork the repository and submit a pull request. Contributions are welcome, and any help is appreciated!
-
-## Acknowledgments
-
-- Mention any resources, tutorials, or open-source projects that you used or were inspired by during the development of this project.
-
 ---
 
 Happy coding! 🚀
